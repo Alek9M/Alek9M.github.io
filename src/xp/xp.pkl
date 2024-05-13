@@ -1,0 +1,341 @@
+hidden platform = new Mapping {
+    ["macOS"] {
+        title = "macOS"
+        appendix = "macos"
+    }
+    ["iOS"] {
+        title = "iOS"
+        appendix = "ios"
+    }
+    // https://partnermarketinghub.withgoogle.com/brands/android/legal-and-trademarks/legal-requirements/
+    ["android"] {
+        title = "Android™"
+        appendix = "android"
+    }
+    ["web"] {
+        title = "WEB"
+        appendix = "htmx"
+    }
+    ["windows"] {
+        title = "Windows"
+        appendix = "windows10"
+    }
+    ["aws"] {
+        title = "AWS"
+        appendix = "amazonaws"
+        url = "https://aws.amazon.com"
+    }
+    ["telegram"] {
+        title = "Telegram"
+        appendix = "telegram"
+        url = "https://telegram.org"
+    }
+    ["node"] {
+        title = "Node.js®"
+        appendix = "nodedotjs"
+    }
+}
+hidden technology = new Mapping {
+    ["swiftUI"] {
+        title = "SwiftUI"
+        appendix = "swift"
+    }
+    ["swift"]  {
+        title = "Swift"
+        appendix = "swift"
+    }
+    ["swiftData"]  {
+        title = "Swift Data"
+        appendix = "apple"
+        url = "https://developer.apple.com/documentation/swiftdata"
+    }
+    ["cloudKit"]  {
+        title = "CloudKit"
+        appendix = "icloud"
+        url = "https://developer.apple.com/icloud/cloudkit/"
+    }
+    ["coreData"] {
+        title = "CoreData"
+        // appendix = "coredata"
+    }
+    ["headlessBrowser"] {
+        title = "Puppeteer"
+        appendix = "puppeteer"
+        url = "https://pptr.dev"
+    }
+    ["javascript"] {
+        title = "JavaScript"
+        appendix = "javascript"
+    }
+    ["openAI"] {
+        title = "OpenAI"
+        appendix = "openai"
+    }
+    ["typescript"] {
+        title = "TypeScript"
+        appendix = "typescript"
+    }
+    ["ec2"] {
+        title = "EC2"
+        appendix = "amazonec2"
+    }
+    ["rds"] {
+        title = "RDS"
+        appendix = "amazonrds"
+    }
+    ["python"] {
+        title = "Python"
+        appendix = "python"
+    }
+    ["react"] {
+        title = "React"
+        appendix = "react"
+    }
+    ["reactNative"] {
+        title = "React Native"
+        appendix = "react"
+    }
+    ["watermelonDB"] {
+        title = "WatermelonDB"
+        appendix = " "
+        url = "https://watermelondb.dev/"
+    }
+    ["figma"] { 
+        title = "Figma"
+        appendix = "figma"
+    }
+    ["uiKit"] {
+        title = "UIKit"
+        appendix = "uikit"
+    }
+    ["modbus"] {
+        title = "Modbus"
+        appendix = " "
+        url = "https://en.wikipedia.org/wiki/Modbus"
+    }
+    ["firebase"] {
+        title = "Firebase"
+        logo = "firebase"
+        url = "https://firebase.google.com/brand-guidelines/"
+    }
+    ["gpt"] {
+        title = "GPT"
+        appendix = "openai"
+    }
+    ["whisper"] {
+        title = "Whisper"
+        appendix = "openai"
+        url = "https://github.com/openai/whisper"
+    }
+    ["json"] {
+        title = "JSON"
+        appendix = "json"
+    }
+    ["pkl"] {
+        title = "Pkl"
+        appendix = " "
+        url = "https://pkl-lang.org/"
+    }
+    ["magnus"] {
+        title = "magnus"
+        appendix = " "
+        url = "https://magnus-ui.com"
+    }
+    ["mapkit"] {
+        title = "MapKit"
+        appendix = " "
+        url = "https://developer.apple.com/documentation/mapkit"
+    }
+    ["callkit"] {
+        title = "CallKit"
+        appendix = " "
+        url = "https://developer.apple.com/documentation/callkit"
+    }
+    ["wpf"] {
+        title = "WPF"
+        appendix = " "
+        url = "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/"
+    }
+    ["flutter"] {
+        title = "Flutter"
+        logo = "flutter"
+        url = "https://flutter.dev/brand"
+    }
+    ["dart"] {
+        title = "Dart"
+        appendix = "dart"
+        url = "https://dart.dev"
+    }
+    ["c"] {
+        title = "C#"
+        appendix = "csharp"
+    }
+    ["spring"] {
+        title = "Spring Boot"
+        appendix = "spring"
+        url = "https://spring.io/projects/spring-boot"
+    }
+}
+
+hidden screenshotsDirectory = "./src/assets/screenshots/"
+
+hidden sampleScreenshots {
+            directory = screenshotsDirectory
+            quantity = 2
+            format = ".png"
+        }
+
+xp {
+    new {
+        title = "Rural 🧑‍🌾 tracking"
+        year = 2020
+        platforms {
+            platform["windows"]
+            platform["android"]
+            platform["iOS"]
+        }
+        stack {
+            technology["flutter"]
+            technology["dart"]
+            technology["spring"]
+            technology["wpf"]
+            technology["c"]
+        }
+        description = "I developed a system for collecting location from employees in rural  areas with little or no internet connection. That included creating mobile tracking app, local collector server and a desktop data consolidator app. The main goals were ease of use and inability to change data by unauthorised employees."
+        screenshots {
+            directory = ""
+            quantity = 0
+            format = ""
+        }
+    }
+    new {
+        title = "Business managment"
+        year = 2021
+        platforms {
+            platform["android"]
+            platform["iOS"]
+        }
+        stack {
+            technology["reactNative"]
+            technology["figma"]
+            technology["watermelonDB"]
+            technology["magnus"]
+        }
+        description = "App for running multiple single person businesses with stock and services managment; finantial plannanig and analisys; CRM.  I developed specifications with the client, produced concept prototype with UX. Hired designer, fascilitated communication with the client, resolved issues and helped with several design elements. Ensured correct native libraries access across platforms. Designed database schema and queries. "
+        github = "https://github.com/Alek9M/BooKeeping"
+        screenshots {
+            directory = screenshotsDirectory + "bookeep/"
+            quantity = 3
+            format = ".png"
+        }
+    }
+    new {
+        title = "Store Scraper ⛏️"
+        year = 2023
+        platforms {
+            platform["node"]
+        }
+        stack {
+            technology["javascript"]
+            technology["headlessBrowser"]
+            technology["gpt"]
+            technology["json"]
+        }
+        description = "Identified main chains in the UK with intersecting base product categories and web stores. Analised HTMLs and created an algorithm to extract full product data. Several separate stores can be scraped in parallel. I optimised for robo-blocking evasion. The ingridients, units and prices are AI parsed into descriptive trees"
+        github = "https://github.com/Alek9M/StoreScraper"
+        screenshots {
+            directory = ""
+            quantity = 0
+            format = ""
+        }
+    }
+    new {
+        title = "Legal Aid Finder 🔍"
+        year = 2023
+        platforms {
+            platform["iOS"]
+            platform["macOS"]
+        }
+        stack {
+            technology["swift"]
+            technology["swiftUI"]
+            technology["swiftData"]
+            technology["cloudKit"]
+            technology["mapkit"]
+            technology["callkit"]
+        }
+        description = "Developed universal Apple app to optimize search of officially listed Legal Aid solicitor. Used native capabilities and Kits to streamline the process and stay on top of it. Ensured thread blocking doesnt occur; complient API requests scheduling; and efficient persistence model management to prevent bottlenecks"
+        github = "https://github.com/Alek9M/CallBook"
+        screenshots {
+            directory = screenshotsDirectory + "call/"
+            quantity = 5
+            format = ".png"
+        }
+        testflight = "https://testflight.apple.com/join/2y6HFLuM"
+    }
+    new {
+        title = "Transcriber 💬"
+        year = 2024
+        platforms {
+            platform["macOS"]
+            platform["windows"]
+        }
+        stack {
+            technology["python"]
+            technology["gpt"]
+            technology["whisper"]
+        }
+        description = """
+        Designed a solution for a wellness podcaster. The app is aimed at: 
+        Broadening following base to readers -- transcribes a podcast, creates a clean article and a summary post; 
+        Improving educational experiences retention -- transcribes long conferences and cleans them from uninformative speech.
+        I ensured compatibility with client's hardware and performance expectations. Programmed a sensible converter into OpenAI's supported formats. Kept AI processing transparent to allow creative adjustments.
+        """
+        github = "https://github.com/Alek9M/SpeechToText"
+        screenshots {
+            directory = screenshotsDirectory + "trans/"
+            quantity = 1
+            format = ".png"
+        }
+    }
+    new {
+        title = "Group Management Bot 🤖"
+        year = 2024
+        platforms {
+            platform["aws"]
+            platform["telegram"]
+        }
+        stack {
+            technology["python"]
+            technology["ec2"]
+            technology["firebase"]
+        }
+        description = "Online communication of my community (charitably provides support for immigrants) was struggling. I developed a solution aimed at fostering safe dialogue and data driven managment. I researched and utilised appropriate services for text moderation, storage and cloud computing. I designed a system that would satisfy both group dynamic and legal requirments."
+        github = "https://github.com/Alek9M/moderatorBot.git"
+        screenshots {
+            directory = screenshotsDirectory + "bot/"
+            quantity = 1
+            format = ".jpeg"
+        }
+    }
+    new {
+        title = "Product viewer"
+        year = 2023
+        platforms {
+            platform["macOS"]
+            platform["iOS"]
+        }
+        stack {
+            technology["swift"]
+            technology["swiftUI"]
+            technology["gpt"]
+        }
+        description = "Created an app to shop around for healthier options. Compares ingridients, checks for unwanted ones and does complex filtering on products from external database."
+        github = "https://github.com/Alek9M/Ingridients"
+        screenshots {
+            directory = screenshotsDirectory + "ingrid/"
+            quantity = 3
+            format = ".png"
+        }
+    }
+}
