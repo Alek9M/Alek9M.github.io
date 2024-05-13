@@ -6,7 +6,7 @@ import { RawIcon } from '../raw-icon/raw-icon';
 export interface SimpleIconProps {
     className?: string;
     icon?: Iconable;
-    color: boolean;
+    color?: boolean;
 }
 
 export interface Iconable {
@@ -22,7 +22,7 @@ export interface Iconable {
  */
 export const SimpleIcon = ({
     className,
-    icon = { title: 'firebase', logo: "firebase" },
+    icon = { title: 'firebase', logo: 'firebase' },
     color = true,
 }: SimpleIconProps) => {
     const img = (
@@ -38,7 +38,7 @@ export const SimpleIcon = ({
     );
     return (
         <div>
-            {icon?.appendix?.length > 0 && (
+            {icon?.appendix && icon?.appendix?.length > 0 && (
                 <>
                     {!icon?.url && <div className={classNames(styles.root, className)}>{img}</div>}
                     {icon.url && (
@@ -48,7 +48,7 @@ export const SimpleIcon = ({
                     )}
                 </>
             )}
-            {icon.logo?.length > 0 && (
+            {icon.logo && icon.logo?.length > 0 && (
                 <a href={icon.url} className={styles.link}>
                     <img
                         className={classNames(styles.root, className)}

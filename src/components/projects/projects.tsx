@@ -15,11 +15,15 @@ export interface ProjectsProps {
  */
 export const Projects = ({ className }: ProjectsProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            {/* for each elemnt of xp map a <Project /> */}
-            {json.xp.sort((a, b) => b.year - a.year).map((project, index) => (
-                <Project key={index} project={project} />
-            ))}
+        <div className={styles.megaroot}>
+            <div className={classNames(styles.root, className)}>
+                {/* for each elemnt of xp map a <Project /> */}
+                {json.xp
+                    .sort((a, b) => b.year - a.year)
+                    .map((project, index) => (
+                        <Project key={index} project={project} />
+                    ))}
+            </div>
         </div>
     );
 };
