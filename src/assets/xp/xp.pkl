@@ -38,7 +38,7 @@ hidden platform = new Mapping {
 hidden technology = new Mapping {
     ["swiftUI"] {
         title = "SwiftUI"
-        appendix = "swift"
+        appendix = " "
     }
     ["swift"]  {
         title = "Swift"
@@ -56,7 +56,7 @@ hidden technology = new Mapping {
     }
     ["coreData"] {
         title = "CoreData"
-        // appendix = "coredata"
+        appendix = " "
     }
     ["headlessBrowser"] {
         title = "Puppeteer"
@@ -360,6 +360,27 @@ xp {
             directory = ""
             quantity = 0
             format = ""
+        }
+    }
+    new {
+        title = "Coach ↔️ client communication tool"
+        year = 2024
+        platforms {
+            platform["iOS"]
+            platform["macOS"]
+        }
+        stack {
+            technology["swift"]
+            technology["swiftUI"]
+            technology["cloudKit"]
+            technology["coreData"]
+        }
+        description = "Created an app that allows to conviniently exchange information through Questionaires and Advices. Questionaires are a predefined by Coach set of questions (text, number or an option) that can be regularly answered by Client for statistics. Advices are actions Client should repeat according to directions."
+        github = "https://github.com/Alek9M/Advice"
+        screenshots {
+            directory = screenshotsDirectory + "ad/"
+            quantity = 3
+            format = ".PNG"
         }
     }
 }

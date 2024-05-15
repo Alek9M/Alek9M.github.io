@@ -2,34 +2,31 @@ import { createBoard } from '@wixc3/react-board';
 import { Project } from '../../../components/project/project';
 
 const xp = {
-    title: 'This website',
+    title: 'Grower',
+    year: 2018,
     platforms: [
         {
-            title: 'web',
-            appendix: ' ',
+            title: 'ios',
+            appendix: 'ios',
         },
     ],
     stack: [
         {
-            title: 'TypeScript',
-            appendix: 'typescript',
+            title: 'Swift',
+            appendix: 'swift',
         },
         {
-            title: 'React',
-            appendix: 'react',
-        },
-        {
-            title: 'Pkl',
+            title: 'SwiftUI',
             appendix: ' ',
         },
         {
-            title: 'GitHub Pages',
-            appendix: 'githubpages',
+            title: 'Modbus',
+            appendix: ' ',
         },
     ],
     description: `
     `,
-    github: 'https://github.com/Alek9M/Advice',
+    github: 'https://github.com/Alek9M/GrowSystem',
     screenshots: {
         directory: '',
         quantity: 0,

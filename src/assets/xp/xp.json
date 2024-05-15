@@ -147,7 +147,7 @@
         },
         {
           "title": "SwiftUI",
-          "appendix": "swift"
+          "appendix": " "
         },
         {
           "title": "Swift Data",
@@ -273,7 +273,7 @@
         },
         {
           "title": "SwiftUI",
-          "appendix": "swift"
+          "appendix": " "
         },
         {
           "title": "GPT",
@@ -322,6 +322,46 @@
         "directory": "",
         "quantity": 0,
         "format": ""
+      }
+    },
+    {
+      "title": "Coach ↔️ client communication tool",
+      "year": 2024,
+      "platforms": [
+        {
+          "title": "iOS",
+          "appendix": "ios"
+        },
+        {
+          "title": "macOS",
+          "appendix": "macos"
+        }
+      ],
+      "stack": [
+        {
+          "title": "Swift",
+          "appendix": "swift"
+        },
+        {
+          "title": "SwiftUI",
+          "appendix": " "
+        },
+        {
+          "title": "CloudKit",
+          "appendix": "icloud",
+          "url": "https://developer.apple.com/icloud/cloudkit/"
+        },
+        {
+          "title": "CoreData",
+          "appendix": " "
+        }
+      ],
+      "description": "Created an app that allows to conviniently exchange information through Questionaires and Advices. Questionaires are a predefined by Coach set of questions (text, number or an option) that can be regularly answered by Client for statistics. Advices are actions Client should repeat according to directions.",
+      "github": "https://github.com/Alek9M/Advice",
+      "screenshots": {
+        "directory": "./src/assets/screenshots/ad/",
+        "quantity": 3,
+        "format": ".PNG"
       }
     }
   ]

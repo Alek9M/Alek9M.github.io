@@ -18,6 +18,7 @@ export interface ProjectProps {
 
 export interface xp {
     title: string;
+    year: number;
     platforms: Iconable[];
     stack: Iconable[];
     description: string;
@@ -133,7 +134,7 @@ export const Project = ({ className, project }: ProjectProps) => {
                         </div>
                     ))}
                 </div>
-
+                <em className={styles.description}>{project.year}</em>
                 <p
                     style={{
                         fontSize: row ? undefined : 12,
