@@ -3,10 +3,35 @@ import classNames from 'classnames';
 import styles from './about.module.scss';
 
 import facepic from '../../assets/photos/face.jpg';
+import { Education, type IEducation } from '../education/education';
 
 export interface AboutProps {
     className?: string;
 }
+
+const educations: IEducation[] = [
+    {
+        url: 'https://www.ncclondon.ac.uk',
+        logo: 'https://epnwpfdx8n9.exactdn.com/wp-content/themes/ncc/media/dist/img/ncc-logo-black.svg',
+        title: 'Data',
+        level: 3,
+        year: 2024,
+    },
+    {
+        url: 'https://www.lewisham.ac.uk',
+        logo: 'https://www.lewisham.ac.uk/templates/lscollege/images/logo-cropped-white.png',
+        title: 'GCSE Maths',
+        level: 2,
+        year: 2023,
+    },
+    {
+        url: 'https://en.wikipedia.org/wiki/Novosibirsk_State_University',
+        logo: 'https://english.nsu.ru/bitrix/templates/nsu/images/Logo_en_white-green.svg',
+        title: 'Computer Science and Computer Engineering',
+        level: 5,
+        year: 2019,
+    },
+];
 
 /**
  * This component was created using Codux's Default new component template.
@@ -23,35 +48,9 @@ export const About = ({ className }: AboutProps) => {
                 <h3>Software Developer 👨‍💻</h3>
                 <div>
                     <h4>Education</h4>
-                    <div className="row">
-                        <a href="https://www.ncclondon.ac.uk">
-                            <img
-                                src="https://epnwpfdx8n9.exactdn.com/wp-content/themes/ncc/media/dist/img/ncc-logo-black.svg"
-                                className={styles.uniLogo}
-                            />
-                        </a>
-                        <h5 className={styles.mainPoints}>Data Level 2</h5>
-                    </div>
-                    <div className="row">
-                        <a href="https://www.lewisham.ac.uk">
-                            <img
-                                src="https://www.lewisham.ac.uk/templates/lscollege/images/logo-cropped-white.png"
-                                className={styles.uniLogo}
-                            />
-                        </a>
-                        <h5 className={styles.mainPoints}>GCSE Maths - 8</h5>
-                    </div>
-                    <div className="row">
-                        <a href="https://en.wikipedia.org/wiki/Novosibirsk_State_University">
-                            <img
-                                src="https://english.nsu.ru/bitrix/templates/nsu/images/Logo_en_white-green.svg"
-                                className={styles.uniLogo}
-                            />
-                        </a>
-                        <h5 className={styles.mainPoints}>
-                            Computer Science and Computer Engineering
-                        </h5>
-                    </div>
+                    {educations.map((education: IEducation) => (
+                        <Education education={education} />
+                    ))}
                 </div>
                 <h5 className={styles.mainPoints}> Work permit in the UK ✅</h5>
                 <div></div>

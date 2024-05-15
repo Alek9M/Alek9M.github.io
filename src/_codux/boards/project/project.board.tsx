@@ -2,37 +2,39 @@ import { createBoard } from '@wixc3/react-board';
 import { Project } from '../../../components/project/project';
 
 const xp = {
-    title: 'Coach ↔️ client communication tool',
+    title: 'This website',
     platforms: [
         {
-            title: 'iOS',
-            appendix: 'ios',
+            title: 'web',
+            appendix: ' ',
         },
     ],
     stack: [
         {
-            title: 'Swift',
-            appendix: 'swift',
+            title: 'TypeScript',
+            appendix: 'typescript',
         },
         {
-            title: 'SwiftUI',
+            title: 'React',
+            appendix: 'react',
+        },
+        {
+            title: 'Pkl',
             appendix: ' ',
         },
         {
-            title: 'CloudKit',
-            appendix: 'icloud',
+            title: 'GitHub Pages',
+            appendix: 'githubpages',
         },
     ],
     description: `
-    Created an app that allows to conviniently exchange information through Questionaires and Advices. Questionaires are a predefined by Coach set of questions (text, number or an option) that can be regularly answered by Client for statistics. Advices are actions Client should repeat according to directions.
     `,
     github: 'https://github.com/Alek9M/Advice',
     screenshots: {
-        directory: 'src/assets/screenshots/ad/',
-        quantity: 3,
-        format: '.png',
+        directory: '',
+        quantity: 0,
+        format: '',
     },
-    testflight: 'https://testflight.apple.com/join/dCBkNZ2j',
 };
 
 export default createBoard({
