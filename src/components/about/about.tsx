@@ -18,6 +18,13 @@ const educations: IEducation[] = [
         year: 2024,
     },
     {
+        url: 'https://www.ncclondon.ac.uk',
+        logo: 'https://epnwpfdx8n9.exactdn.com/wp-content/themes/ncc/media/dist/img/ncc-logo-black.svg',
+        title: 'GCSE English',
+        level: 2,
+        year: 2024,
+    },
+    {
         url: 'https://www.lewisham.ac.uk',
         logo: 'https://www.lewisham.ac.uk/templates/lscollege/images/logo-cropped-white.png',
         title: 'GCSE Maths',
