@@ -7,8 +7,6 @@ import { Projects } from './components/projects/projects';
 import { About } from './components/about/about';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <Router>
             <div className={styles.App}>

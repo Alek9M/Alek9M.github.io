@@ -19,6 +19,7 @@ export interface ProjectProps {
 export interface xp {
     title: string;
     year: number;
+    team: number;
     platforms: Iconable[];
     stack: Iconable[];
     description: string;
@@ -135,7 +136,17 @@ export const Project = ({ className, project }: ProjectProps) => {
                         </div>
                     ))}
                 </div>
-                <em className={styles.description}>{project.year}</em>
+                <div className="row">
+                    <em className={styles.description}>{project.year}</em>
+                    {project.team > 1 && (
+                            <span>{"\u00A0\u00A0"}👥 teamwork</span>
+
+                    )}
+                    {project.team == 1 && (
+                            <span>{"\u00A0\u00A0"}👤 solo</span>
+
+                    )}
+                </div>
                 <p
                     style={{
                         fontSize: row ? undefined : 12,

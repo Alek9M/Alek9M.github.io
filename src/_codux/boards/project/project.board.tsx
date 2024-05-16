@@ -4,6 +4,7 @@ import { Project } from '../../../components/project/project';
 const xp = {
     title: 'Grower',
     year: 2018,
+    team: 3,
     platforms: [
         {
             title: 'ios',
@@ -25,12 +26,13 @@ const xp = {
         },
     ],
     description: `
+    I developed a mobile remote for restaurants greenhouse systems. It enables users to monitor and adjust environmental conditions such as lighting and temperature. I wokred in a team and also assisted in UI design.
     `,
     github: 'https://github.com/Alek9M/GrowSystem',
     screenshots: {
-        directory: '',
-        quantity: 0,
-        format: '',
+        directory: 'grow/',
+        quantity: 2,
+        format: '.jpeg',
     },
 };
 
