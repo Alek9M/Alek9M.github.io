@@ -195,6 +195,7 @@ xp {
     new {
         title = "Rural 🧑‍🌾 tracking"
         year = 2020
+        team = 1
         platforms {
             platform["windows"]
             platform["android"]
@@ -217,6 +218,7 @@ xp {
     new {
         title = "Business managment"
         year = 2021
+        team = 3
         platforms {
             platform["android"]
             platform["iOS"]
@@ -238,6 +240,7 @@ xp {
     new {
         title = "Store Scraper ⛏️"
         year = 2023
+        team = 1
         platforms {
             platform["node"]
         }
@@ -258,6 +261,7 @@ xp {
     new {
         title = "Legal Aid Finder 🔍"
         year = 2023
+        team = 1
         platforms {
             platform["iOS"]
             platform["macOS"]
@@ -283,6 +287,7 @@ xp {
     new {
         title = "Transcriber 💬"
         year = 2024
+        team = 1
         platforms {
             platform["macOS"]
             platform["windows"]
@@ -308,6 +313,7 @@ xp {
     new {
         title = "Group Management Bot 🤖"
         year = 2024
+        team = 1
         platforms {
             platform["aws"]
             platform["telegram"]
@@ -328,6 +334,7 @@ xp {
     new {
         title = "Product viewer"
         year = 2023
+        team = 1
         platforms {
             platform["macOS"]
             platform["iOS"]
@@ -348,6 +355,7 @@ xp {
     new {
         title = "This website"
         year = 2024
+        team = 1
         platforms {
             platform["web"]
         }
@@ -368,6 +376,7 @@ xp {
     new {
         title = "Coach ↔️ client communication tool"
         year = 2022
+        team = 1
         platforms {
             platform["iOS"]
             platform["macOS"]
@@ -384,6 +393,26 @@ xp {
             directory = screenshotsDirectory + "ad/"
             quantity = 3
             format = ".PNG"
+        }
+    }
+    new {
+        title = "Remote Grow 🌱"
+        year = 2019
+        team = 3
+        platforms {
+            platform["iOS"]
+        }
+        stack {
+            technology["swift"]
+            technology["swiftUI"]
+            technology["modbus"]
+        }
+        description = "I developed a mobile remote for restaurants greenhouse systems. It enables users to monitor and adjust environmental conditions such as lighting and temperature. I wokred in a team and also assisted in UI design."
+        github = "https://github.com/Alek9M/GrowSystem"
+        screenshots {
+            directory = screenshotsDirectory + "grow/"
+            quantity = 2
+            format = ".jpeg"
         }
     }
 }

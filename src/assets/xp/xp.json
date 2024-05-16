@@ -3,6 +3,7 @@
     {
       "title": "Rural 🧑‍🌾 tracking",
       "year": 2020,
+      "team": 1,
       "platforms": [
         {
           "title": "Windows",
@@ -53,6 +54,7 @@
     {
       "title": "Business managment",
       "year": 2021,
+      "team": 3,
       "platforms": [
         {
           "title": "Android™",
@@ -94,6 +96,7 @@
     {
       "title": "Store Scraper ⛏️",
       "year": 2023,
+      "team": 1,
       "platforms": [
         {
           "title": "Node.js®",
@@ -131,6 +134,7 @@
     {
       "title": "Legal Aid Finder 🔍",
       "year": 2023,
+      "team": 1,
       "platforms": [
         {
           "title": "iOS",
@@ -184,6 +188,7 @@
     {
       "title": "Transcriber 💬",
       "year": 2024,
+      "team": 1,
       "platforms": [
         {
           "title": "macOS",
@@ -221,6 +226,7 @@
     {
       "title": "Group Management Bot 🤖",
       "year": 2024,
+      "team": 1,
       "platforms": [
         {
           "title": "AWS",
@@ -260,6 +266,7 @@
     {
       "title": "Product viewer",
       "year": 2023,
+      "team": 1,
       "platforms": [
         {
           "title": "macOS",
@@ -296,6 +303,7 @@
     {
       "title": "This website",
       "year": 2024,
+      "team": 1,
       "platforms": [
         {
           "title": "WEB",
@@ -332,6 +340,7 @@
     {
       "title": "Coach ↔️ client communication tool",
       "year": 2022,
+      "team": 1,
       "platforms": [
         {
           "title": "iOS",
@@ -367,6 +376,39 @@
         "directory": "./src/assets/screenshots/ad/",
         "quantity": 3,
         "format": ".PNG"
+      }
+    },
+    {
+      "title": "Remote Grow 🌱",
+      "year": 2019,
+      "team": 3,
+      "platforms": [
+        {
+          "title": "iOS",
+          "appendix": "ios"
+        }
+      ],
+      "stack": [
+        {
+          "title": "Swift",
+          "appendix": "swift"
+        },
+        {
+          "title": "SwiftUI",
+          "appendix": " "
+        },
+        {
+          "title": "Modbus",
+          "appendix": " ",
+          "url": "https://en.wikipedia.org/wiki/Modbus"
+        }
+      ],
+      "description": "I developed a mobile remote for restaurants greenhouse systems. It enables users to monitor and adjust environmental conditions such as lighting and temperature. I wokred in a team and also assisted in UI design.",
+      "github": "https://github.com/Alek9M/GrowSystem",
+      "screenshots": {
+        "directory": "./src/assets/screenshots/grow/",
+        "quantity": 2,
+        "format": ".jpeg"
       }
     }
   ]
