@@ -213,7 +213,7 @@ xp {
             technology["flutter"]
             technology["dart"]
         }
-        description = "I developed a system for collecting location from employees in rural  areas who have little or no internet connection. That included creating mobile tracking app, local collector server and a desktop data consolidator app. The main goals were ease of use and inability to change data by unauthorised employees."
+        description = "I developed a system for collecting location data from employees in rural areas with limited or no internet access. This included creating a mobile tracking app, a local collector server, and a desktop data consolidator app. The main goals were ease of use and preventing unauthorized employees from altering data."
         screenshots {
             directory = ""
             quantity = 0
@@ -221,7 +221,7 @@ xp {
         }
     }
     new {
-        title = "Business managment"
+        title = "Business management"
         year = 2021
         team = 3
         platforms {
@@ -234,7 +234,7 @@ xp {
             technology["watermelonDB"]
             technology["magnus"]
         }
-        description = "App for running multiple single person businesses with stock and services managment; finantial plannanig and analisys; CRM.  I developed specifications with the client, produced concept prototype with UX. Hired designer, fascilitated communication with the client, resolved issues and helped with several functional design elements. Ensured correct native libraries access across platforms. Designed database schema and queries. "
+        description = "This app aids in managing multiple single-person businesses by handling stock and service management, financial planning, and analysis, as well as CRM. I developed specifications with the client, produced a concept prototype focused on UX, and hired a designer. My role involved facilitating communication with the client, resolving issues, and assisting with several functional design elements. I also ensured proper access to native libraries across platforms and designed the database schema and queries."
         github = "https://github.com/Alek9M/BooKeeping"
         screenshots {
             directory = screenshotsDirectory + "bookeep/"
@@ -255,7 +255,7 @@ xp {
             technology["gpt"]
             technology["json"]
         }
-        description = "Identified main chains in the UK with intersecting base product categories and web stores. Analised HTMLs and created an algorithm to extract full product data. Several separate stores can be scraped in parallel. I optimised for robo-blocking evasion. The ingridients, units and prices are AI parsed into descriptive trees"
+        description = "I identified main chains in the UK with overlapping base product categories and web stores. After analyzing their HTML, I created an algorithm to extract complete product data. The system allows for parallel scraping of several separate stores. I optimized the process to evade robot-blocking mechanisms. Ingredients, units, and prices are parsed by AI into descriptive trees."
         github = "https://github.com/Alek9M/StoreScraper"
         screenshots {
             directory = ""
@@ -279,7 +279,7 @@ xp {
             technology["mapkit"]
             technology["callkit"]
         }
-        description = "Developed universal Apple app to optimize search of officially listed Legal Aid solicitor. Used native capabilities and Kits to streamline the process and stay on top of it. Ensured thread blocking doesnt occur; complient API requests scheduling; and efficient persistence model management to prevent bottlenecks"
+        description = "I developed an app to optimize the search for officially listed Legal Aid solicitors. Using native capabilities and various Kits, I streamlined the process. I ensured that thread blocking does not occur, arranged compliant API request scheduling, and managed an efficient persistence model to avoid bottlenecks."
         github = "https://github.com/Alek9M/CallBook"
         screenshots {
             directory = screenshotsDirectory + "call/"
@@ -328,7 +328,7 @@ xp {
             technology["ec2"]
             technology["firebase"]
         }
-        description = "Online communication of my community (charitably provides support for immigrants) was struggling. I developed a solution aimed at fostering safe dialogue and data driven managment. I researched and utilised appropriate services for text moderation, storage and cloud computing. I designed a system that would satisfy both group dynamic and legal requirments."
+        description = "My community, which provides support for immigrants, was struggling with online communication. I developed a solution aimed at fostering safe dialogue and data-driven management by researching and utilizing appropriate services for text moderation, storage, and cloud computing. The system was designed to satisfy both group dynamics and legal requirements."
         github = "https://github.com/Alek9M/moderatorBot.git"
         screenshots {
             directory = screenshotsDirectory + "bot/"
@@ -349,7 +349,7 @@ xp {
             technology["swiftUI"]
             technology["gpt"]
         }
-        description = "Created an app to shop around for healthier options. Compares ingridients, checks for unwanted ones and does complex filtering on products from external database."
+        description = "I created an app to assist users in shopping for healthier options by comparing ingredients, identifying unwanted substances, and performing complex filtering on products from an external database."
         github = "https://github.com/Alek9M/Ingridients"
         screenshots {
             directory = screenshotsDirectory + "ingrid/"
@@ -392,7 +392,7 @@ xp {
             technology["cloudKit"]
             technology["coreData"]
         }
-        description = "Created an app that allows to conviniently exchange information through Questionaires and Advices. Questionaires are a predefined by Coach set of questions (text, number or an option) that can be regularly answered by Client for statistics. Advices are actions Client should repeat according to directions."
+        description = "I created an app that facilitates the exchange of information through Questionnaires and Advice. Coaches can predefine a set of questions (text, number, or options) which clients can regularly answer for statistics. Advice comprises actions clients should repeat according to directions."
         github = "https://github.com/Alek9M/Advice"
         screenshots {
             directory = screenshotsDirectory + "ad/"
@@ -412,7 +412,7 @@ xp {
             technology["swiftUI"]
             technology["modbus"]
         }
-        description = "I developed a mobile remote for restaurants greenhouse systems. It enables users to monitor and adjust environmental conditions such as lighting and temperature. I wokred in a team and also assisted in UI design."
+        description = "I developed a mobile application for restaurant greenhouse systems that allows users to monitor and adjust environmental conditions such as lighting and temperature. I worked in a team and also assisted in UI design."
         github = "https://github.com/Alek9M/GrowSystem"
         screenshots {
             directory = screenshotsDirectory + "grow/"
@@ -431,7 +431,7 @@ xp {
             technology["c"]
             technology["blazor"]
         }
-        description = "Collaborated within a diverse team to develop notification features."
+        description = "I collaborated with a diverse team to develop notification features."
         github = "https://github.com/Alek9M/GrowSystem"
         screenshots {
             directory = "/"
