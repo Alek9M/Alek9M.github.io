@@ -3,6 +3,7 @@ import styles from './projects.module.scss';
 import json from '../../assets/xp/xp.json';
 import { Project } from '../project/project';
 import { SimpleIcon } from '../simple-icon/simple-icon';
+import { useState } from 'react';
 
 export interface ProjectsProps {
     className?: string;
@@ -28,6 +29,7 @@ const uniquePlatforms = Array.from(
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Projects = ({ className }: ProjectsProps) => {
+    const [platform, setPlatform] = useState(0);
     return (
         <div className={styles.megaroot}>
             {/* <div className={classNames('row', styles.stack, styles.platforms)}>
