@@ -7,6 +7,7 @@ const education: IEducation = {
     title: 'Computer Science and Computer Engineering',
     level: 5,
     year: 2019,
+    achievement: "Grade 8"
 };
 
 export default createBoard({

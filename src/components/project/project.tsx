@@ -24,7 +24,8 @@ export interface xp {
     description: string;
     github?: string;
     testflight?: string;
-    appstore?: string;
+    appStore?: string;
+    macAppStore?: string;
     screenshots: {
         directory: string;
         quantity: number;
@@ -157,11 +158,18 @@ export const Project = ({ className, project }: ProjectProps) => {
                         </p>
                     </a>
                 )}
-                {project.appstore && (
-                    <a href={project.appstore}>
-                        <img src="/src/assets/logos/apple/1.svg" />
-                    </a>
-                )}
+                <div className={styles.trailing}>
+                    {project.appStore && (
+                        <a href={project.appStore}>
+                            <img src="/src/assets/logos/apple/1.svg" />
+                        </a>
+                    )}
+                    {project.macAppStore && (
+                        <a href={project.macAppStore}>
+                            <img src="/src/assets/logos/apple/m1.svg" />
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     );

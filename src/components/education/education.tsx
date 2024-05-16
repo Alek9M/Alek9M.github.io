@@ -12,6 +12,7 @@ export interface IEducation {
     level: number;
     year: number;
     url: string;
+    achievement?: string;
 }
 
 /**
@@ -38,6 +39,14 @@ export const Education = ({ className, education }: EducationProps) => {
                         <p className={classNames(styles.data, styles.description)}>
                             Level {education.level}
                         </p>
+                        {education.achievement && (
+                            <div className="row">
+                                <p className={classNames(styles.data, styles.description)}>-</p>
+                                <p className={classNames(styles.data, styles.description)}>
+                                    {education.achievement}
+                                </p>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

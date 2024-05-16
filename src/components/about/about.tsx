@@ -23,6 +23,7 @@ const educations: IEducation[] = [
         title: 'GCSE Maths',
         level: 2,
         year: 2023,
+        achievement: "Grade 8"
     },
     {
         url: 'https://en.wikipedia.org/wiki/Novosibirsk_State_University',

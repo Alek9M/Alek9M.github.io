@@ -276,6 +276,7 @@ xp {
             format = ".png"
         }
         testflight = "https://testflight.apple.com/join/2y6HFLuM"
+        macAppStore = "https://apps.apple.com/ru/app/callbook/id6473545364"
     }
     new {
         title = "Transcriber 💬"
