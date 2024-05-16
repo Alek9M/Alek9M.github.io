@@ -112,7 +112,8 @@
         },
         {
           "title": "GPT",
-          "appendix": "openai"
+          "appendix": "openai",
+          "url": "https://openai.com/api/"
         },
         {
           "title": "JSON",
@@ -177,7 +178,8 @@
         "quantity": 5,
         "format": ".png"
       },
-      "testflight": "https://testflight.apple.com/join/2y6HFLuM"
+      "testflight": "https://testflight.apple.com/join/2y6HFLuM",
+      "macAppStore": "https://apps.apple.com/ru/app/callbook/id6473545364"
     },
     {
       "title": "Transcriber 💬",
@@ -199,7 +201,8 @@
         },
         {
           "title": "GPT",
-          "appendix": "openai"
+          "appendix": "openai",
+          "url": "https://openai.com/api/"
         },
         {
           "title": "Whisper",
@@ -237,7 +240,8 @@
         },
         {
           "title": "EC2",
-          "appendix": "amazonec2"
+          "appendix": "amazonec2",
+          "url": "https://aws.amazon.com/ec2/"
         },
         {
           "title": "Firebase",
@@ -277,7 +281,8 @@
         },
         {
           "title": "GPT",
-          "appendix": "openai"
+          "appendix": "openai",
+          "url": "https://openai.com/api/"
         }
       ],
       "description": "Created an app to shop around for healthier options. Compares ingridients, checks for unwanted ones and does complex filtering on products from external database.",
@@ -326,7 +331,7 @@
     },
     {
       "title": "Coach ↔️ client communication tool",
-      "year": 2024,
+      "year": 2022,
       "platforms": [
         {
           "title": "iOS",

@@ -78,6 +78,7 @@ hidden technology = new Mapping {
     ["ec2"] {
         title = "EC2"
         appendix = "amazonec2"
+        url = "https://aws.amazon.com/ec2/"
     }
     ["rds"] {
         title = "RDS"
@@ -121,6 +122,7 @@ hidden technology = new Mapping {
     ["gpt"] {
         title = "GPT"
         appendix = "openai"
+        url = "https://openai.com/api/"
     }
     ["whisper"] {
         title = "Whisper"
@@ -276,6 +278,7 @@ xp {
             format = ".png"
         }
         testflight = "https://testflight.apple.com/join/2y6HFLuM"
+        macAppStore = "https://apps.apple.com/ru/app/callbook/id6473545364"
     }
     new {
         title = "Transcriber 💬"
@@ -364,7 +367,7 @@ xp {
     }
     new {
         title = "Coach ↔️ client communication tool"
-        year = 2024
+        year = 2022
         platforms {
             platform["iOS"]
             platform["macOS"]
