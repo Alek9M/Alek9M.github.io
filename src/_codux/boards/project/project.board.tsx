@@ -2,31 +2,26 @@ import { createBoard } from '@wixc3/react-board';
 import { Project } from '../../../components/project/project';
 
 const xp = {
-    title: 'Grower',
-    year: 2018,
-    team: 3,
+    title: 'Team builder',
+    year: 2022,
+    team: 6,
     platforms: [
         {
-            title: 'ios',
-            appendix: 'ios',
+            title: 'web',
+            appendix: ' ',
         },
     ],
     stack: [
         {
-            title: 'Swift',
-            appendix: 'swift',
+            title: 'Blazor',
+            appendix: 'blazor',
         },
         {
-            title: 'SwiftUI',
-            appendix: ' ',
-        },
-        {
-            title: 'Modbus',
-            appendix: ' ',
+            title: 'C#',
+            appendix: 'csharp',
         },
     ],
-    description: `
-    I developed a mobile remote for restaurants greenhouse systems. It enables users to monitor and adjust environmental conditions such as lighting and temperature. I wokred in a team and also assisted in UI design.
+    description: `Implemented notification 
     `,
     github: 'https://github.com/Alek9M/GrowSystem',
     screenshots: {

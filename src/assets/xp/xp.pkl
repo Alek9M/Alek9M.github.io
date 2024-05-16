@@ -181,6 +181,11 @@ hidden technology = new Mapping {
         title = "GitHub Pages"
         appendix = "githubpages"
     }
+    ["blazor"] {
+        title = "Blazor"
+        appendix = "blazor"
+        url = "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
+    }
 }
 
 hidden screenshotsDirectory = "./src/assets/screenshots/"
@@ -413,6 +418,25 @@ xp {
             directory = screenshotsDirectory + "grow/"
             quantity = 2
             format = ".jpeg"
+        }
+    }
+    new {
+        title = "Team builder"
+        year = 2022
+        team = 6
+        platforms {
+            platform["web"]
+        }
+        stack {
+            technology["c"]
+            technology["blazor"]
+        }
+        description = "Collaborated within a diverse team to develop notification features."
+        github = "https://github.com/Alek9M/GrowSystem"
+        screenshots {
+            directory = "/"
+            quantity = 0
+            format = ""
         }
     }
 }
