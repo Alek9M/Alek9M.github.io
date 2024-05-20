@@ -14,6 +14,7 @@ import React from 'react';
 export interface ProjectProps {
     className?: string;
     project: xp;
+    full?: boolean;
 }
 
 export interface xp {
@@ -72,7 +73,7 @@ const responsive = {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Project = ({ className, project }: ProjectProps) => {
+export const Project = ({ className, project, full = true }: ProjectProps) => {
     const [width, setWidth] = React.useState(window.innerWidth);
     React.useEffect(() => {
         const handleResizeWindow = () => setWidth(window.innerWidth);
@@ -89,12 +90,12 @@ export const Project = ({ className, project }: ProjectProps) => {
         project.screenshots?.directory &&
         project.screenshots?.format;
     let screenshots;
-    if (exists && project.screenshots.quantity > 0) {
+    if (full && exists && project.screenshots.quantity > 0) {
         screenshots = Array(project.screenshots.quantity)
             .fill(0)
             .map(
                 (_: number, index: number) =>
-                    '/' + project.screenshots.directory + (index + 1) + project.screenshots.format,
+                    '/' + project.screenshots.directory + (index + 1) + project.screenshots.format
             );
     }
     const row = width > 500;
@@ -138,14 +139,8 @@ export const Project = ({ className, project }: ProjectProps) => {
                 </div>
                 <div className="row">
                     <em className={styles.description}>{project.year}</em>
-                    {project.team > 1 && (
-                            <span>{"\u00A0\u00A0"}👥 teamwork</span>
-
-                    )}
-                    {project.team == 1 && (
-                            <span>{"\u00A0\u00A0"}👤 solo</span>
-
-                    )}
+                    {project.team > 1 && <span>{'\u00A0\u00A0'}👥 teamwork</span>}
+                    {project.team == 1 && <span>{'\u00A0\u00A0'}👤 solo</span>}
                 </div>
                 <p
                     style={{

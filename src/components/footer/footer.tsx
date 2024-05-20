@@ -2,24 +2,36 @@ import '../../index.css';
 import classNames from 'classnames';
 import styles from './footer.module.scss';
 import { SimpleIcon } from '../simple-icon/simple-icon';
+import { useLocation } from 'react-router-dom';
 
 export interface FooterProps {
     className?: string;
+    full?: boolean;
 }
 
 /**
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Footer = ({ className }: FooterProps) => {
+export const Footer = ({ className, full = true }: FooterProps) => {
     const email = 'majesty09_aerator@icloud.com';
     const phone = '+447774322780';
-
+    const location = useLocation();
+    const CVmode = location.pathname === '/cv';
+    if (CVmode && full) {
+        return <></>;
+    }
     return (
-        <div className={classNames(styles.root, className)}>
+        <div
+            className={classNames(styles.root, className)}
+            style={{ flexGrow: full ? undefined : '1', alignSelf: 'stretch' }}
+        >
             <div className="limit">
                 <div className={styles['main-points']}>
-                    <a href={`mailto:${email}`}>✉️ e-mail</a>
+                    <div className="row">
+                        <a href={`mailto:${email}`}>✉️ e-mail</a>
+                        {!full && <a href={`mailto:${email}`}>{email}</a>}
+                    </div>
                     <a href={`tel:${phone}`}>📞 please don't call me </a>
                 </div>
                 <div className={styles.socials}>

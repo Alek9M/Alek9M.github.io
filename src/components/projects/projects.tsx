@@ -3,10 +3,13 @@ import styles from './projects.module.scss';
 import json from '../../assets/xp/xp.json';
 import { Project } from '../project/project';
 import { SimpleIcon } from '../simple-icon/simple-icon';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { log } from 'console';
 
 export interface ProjectsProps {
     className?: string;
+    full?: boolean;
+    platforms?: string[];
 }
 
 const uniquePlatforms = Array.from(
@@ -28,8 +31,35 @@ const uniquePlatforms = Array.from(
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Projects = ({ className }: ProjectsProps) => {
+export const Projects = ({ className, full = true, platforms }: ProjectsProps) => {
     const [platform, setPlatform] = useState(0);
+
+    const [queryParams, setQueryParams] = useState({});
+    let plats: string[] = [];
+
+    // useEffect(() => {
+    //     // Parse the query string
+    //     const searchParams = new URLSearchParams(window.location.search);
+    //     const params = {};
+
+    //     for (let param of searchParams.entries()) {
+    //         const [key, value] = param;
+    //         plats.push(value);
+    //     }
+
+    //     setQueryParams(params);
+    // }, []);
+
+    let xp = json.xp.sort((a, b) => b.year - a.year);
+    if (platforms && platforms.length > 0) {
+        xp = xp.filter((item) =>
+            item.platforms.some(
+                (platform) => platforms && platforms.some((required) => required == platform.title)
+                // ||
+                // plats.some((required) => required == platform.title)
+            )
+        );
+    }
     return (
         <div className={styles.megaroot}>
             {/* <div className={classNames('row', styles.stack, styles.platforms)}>
@@ -42,11 +72,9 @@ export const Projects = ({ className }: ProjectsProps) => {
             </div> */}
             <div className={classNames(styles.root, className)}>
                 {/* for each elemnt of xp map a <Project /> */}
-                {json.xp
-                    .sort((a, b) => b.year - a.year)
-                    .map((project, index) => (
-                        <Project key={index} project={project} />
-                    ))}
+                {xp.map((project, index) => (
+                    <Project full={full} key={index} project={project} />
+                ))}
             </div>
         </div>
     );

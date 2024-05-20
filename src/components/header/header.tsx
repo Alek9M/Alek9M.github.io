@@ -15,7 +15,10 @@ export const Header = ({ className }: HeaderProps) => {
         <div className={classNames(styles.root, className)}>
             <nav className={styles.navigation_row}>
                 <Link to="/projects">Projects</Link>
-                <Link to="/about">Me</Link>
+                <div className="row">
+                    <Link to="/about">Me</Link>
+                    <Link to="/cv">📥</Link>
+                </div>
             </nav>
         </div>
     );

@@ -7,6 +7,7 @@ import { Education, type IEducation } from '../education/education';
 
 export interface AboutProps {
     className?: string;
+    full?: boolean;
 }
 
 const educations: IEducation[] = [
@@ -30,7 +31,7 @@ const educations: IEducation[] = [
         title: 'GCSE Maths',
         level: 2,
         year: 2023,
-        achievement: "Grade 8"
+        achievement: 'Grade 8',
     },
     {
         url: 'https://en.wikipedia.org/wiki/Novosibirsk_State_University',
@@ -45,14 +46,17 @@ const educations: IEducation[] = [
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const About = ({ className }: AboutProps) => {
+export const About = ({ className, full = true }: AboutProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.rectangle}>
-                <img src={facepic} alt="Facepic" className={styles.circular} />
-                {/* circular image of my face from packages/client/src/assets/photos/face.jpg with a bit of shade to the bottom left */}
-            </div>
+            {full && (
+                <div className={styles.rectangle}>
+                    <img src={facepic} alt="Facepic" className={styles.circular} />
+                </div>
+            )}
+
             <div className={classNames(styles.rectangle, styles.text)}>
+                {!full && <h2>Alek Karpunin</h2>}
                 <h3>Software Developer 👨‍💻</h3>
                 <div>
                     <h4>Education</h4>
