@@ -20,7 +20,7 @@ export const CV = ({ className }: CvProps) => {
                 <Footer full={false} />
             </div>
 
-            <Projects full={false} platforms={['Windows', 'WEB', 'AWS', 'Node.js®']} />
+            <Projects full={false} platforms={['iOS', 'macOS', 'WEB', 'Android™']} />
         </div>
     );
 };

@@ -22,7 +22,7 @@ hidden platform = new Mapping {
     }
     ["aws"] {
         title = "AWS"
-        appendix = "amazonaws"
+        appendix = "amazonwebservices"
         url = "https://aws.amazon.com"
     }
     ["telegram"] {
@@ -186,6 +186,16 @@ hidden technology = new Mapping {
         appendix = "blazor"
         url = "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
     }
+    ["zoom"] {
+        title = "Zoom"
+        appendix = "zoom"
+        url = "https://developers.zoom.us/docs/api/"
+    }
+    ["notion"] {
+        title = "Notion"
+        appendix = "notion"
+        url = "https://developers.notion.com"
+    }
 }
 
 hidden screenshotsDirectory = "./src/assets/screenshots/"
@@ -279,15 +289,15 @@ xp {
             technology["mapkit"]
             technology["callkit"]
         }
-        description = "I developed an app to optimize the search for officially listed Legal Aid solicitors. Using native capabilities and various Kits, I streamlined the process. I ensured that thread blocking does not occur, arranged compliant API request scheduling, and managed an efficient persistence model to avoid bottlenecks."
+        description = "Developed a comprehensive utility app to manage legal aid provider contacts, integrating native Kits for enhanced functionality. Designed to improve access to legal aid services through a user-friendly interface. Successfully helped several people easily find a solicitor. Dealt with UI bottleneck due to large list of providers."
         github = "https://github.com/Alek9M/CallBook"
         screenshots {
             directory = screenshotsDirectory + "call/"
             quantity = 5
             format = ".png"
         }
-        testflight = "https://testflight.apple.com/join/2y6HFLuM"
-        macAppStore = "https://apps.apple.com/ru/app/callbook/id6473545364"
+        appStore = "https://apps.apple.com/gb/app/callbook/id6473545364"
+        macAppStore = "https://apps.apple.com/gb/app/callbook/id6473545364"
     }
     new {
         title = "Transcriber 💬"
@@ -328,7 +338,7 @@ xp {
             technology["ec2"]
             technology["firebase"]
         }
-        description = "My community, which provides support for immigrants, was struggling with online communication. I developed a solution aimed at fostering safe dialogue and data-driven management by researching and utilizing appropriate services for text moderation, storage, and cloud computing. The system was designed to satisfy both group dynamics and legal requirements."
+        description = "Designed a Telegram bot for community management, automating moderation and member interaction to foster a safe communication environment. Successfully integrated and has decreased required human oversight."
         github = "https://github.com/Alek9M/moderatorBot.git"
         screenshots {
             directory = screenshotsDirectory + "bot/"
@@ -431,12 +441,36 @@ xp {
             technology["c"]
             technology["blazor"]
         }
-        description = "I collaborated with a diverse team to develop notification features."
+        description = "Implemented full stack real time notification solution for web tool aiming to form effective teams in large corporations. Effectively gathered requirements and learnt the codebase in a 7 people team. Delivered production ready solution in a short time span."
         github = "https://github.com/Alek9M/GrowSystem"
         screenshots {
             directory = "/"
             quantity = 0
             format = ""
+        }
+    }
+    new {
+        title = "Meeting summariser 💬"
+        year = 2024
+        team = 1
+        platforms {
+            platform["aws"]
+        }
+        stack {
+            technology["python"]
+            technology["gpt"]
+            technology["whisper"]
+            technology["zoom"]
+            technology["notion"]
+        }
+        description = """
+        In order to keep the records of my community developed a script that dowloads Zoom recordings, transcribes them, summarises through GPT and uploads to the correct event in Notion.
+        """
+        // github = ""
+        screenshots {
+            directory = screenshotsDirectory + "/"
+            quantity = 0
+            format = ".png"
         }
     }
 }

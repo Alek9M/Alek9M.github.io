@@ -38,7 +38,7 @@ export const Footer = ({ className, full = true }: FooterProps) => {
                     <a href={'https://github.com/Alek9M'} target="_blank" rel="noreferrer">
                         <SimpleIcon icon={{ title: 'GitHub', appendix: 'github' }} />
                     </a>
-                    <a href={'www.linkedin.com/in/akrp9'} target="_blank" rel="noreferrer">
+                    <a href={'https://www.linkedin.com/in/akrp9'} target="_blank" rel="noreferrer">
                         <SimpleIcon icon={{ title: 'LinkedIn', appendix: 'linkedin' }} />
                     </a>
                     <a
